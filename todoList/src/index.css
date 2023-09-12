@@ -29,6 +29,10 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -43,9 +47,11 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: black;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin-left: 10px;
+
 }
 button:hover {
   border-color: #646cff;
@@ -58,12 +64,33 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-image: url('assets/montanha.jpg');
+    background-size: cover; /* Para ajustar a imagem ao tamanho da janela do navegador */
+    background-repeat: no-repeat; /* Para evitar repetição da imagem */
+
   }
   a:hover {
-    color: #747bff;
+    color: #1abc9c;
   }
   button {
     background-color: #f9f9f9;
   }
+}
+
+div {
+  background-color: #95a5a6;
+  border-radius: 10px;
+  border: 1px solid #bdc3c7; /* Adiciona uma borda para destacar as bordas arredondadas */
+  padding: 20px; /* Adiciona algum espaço interno para o conteúdo */
+}
+
+section {
+  background-color: #bdc3c7;
+  padding: 10px;
+  
+
+}
+
+input, span {
+  margin-right: 10px; 
 }
